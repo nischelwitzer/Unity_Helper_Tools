@@ -1,18 +1,31 @@
 # Unity_Helper_Tools
 
-## Parameters
+## Parameters in C# Files
 
 ```
 [DefaultExecutionOrder(-100)]
-
+[RequireComponent(typeof(Rigidbody))]
 ```
 
-## Text Assets
+## Text Assets Parsing
+
+* StreamingAssets folder (case-sensitive)
+* Resources Resources.Load 
+
+## Text Assets Loading
 
 ```
-TextAsset file = Resources.Load("MyJSONFolder/config") as TextAsset;
+[Header("Datei-Einstellungen")]
+[Tooltip("Pfad zur TXT-Datei (Textformat, z. B. alex.txt)")]
+public string myFile = "Assets/alex.txt";
+[SerializeField] private TextAsset myText;
+```
+```
+TextAsset file = Resources.Load("text/config") as TextAsset; // in Assets/Resources/text/config.txt
 string content = file.toString();
 ```
+
+## Text Assets Parsing
 
 ```
 string[] lines = txtFile.text.Split(
@@ -24,8 +37,8 @@ foreach (var line in lines)
 }
 ```
 
-```
-[Header("Datei-Einstellungen")]
-[Tooltip("Pfad zur TXT-Datei (Textformat, z. B. alex.txt)")]
-public string myFile = "Assets/alex.txt";
-```
+
+
+
+
+
