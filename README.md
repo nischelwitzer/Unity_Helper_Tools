@@ -7,7 +7,7 @@
 [RequireComponent(typeof(Rigidbody))]
 ```
 
-## Text Assets Parsing
+## Special Folders
 
 * StreamingAssets folder (case-sensitive)
 * Resources Resources.Load 
