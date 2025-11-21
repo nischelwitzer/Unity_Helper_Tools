@@ -36,6 +36,11 @@ foreach (var line in lines)
     var parts = line.Split(' ', '\t');
 }
 ```
+## Debug Log Formating
+
+```
+Debug.Log($"Line has <color=yellow><b>{parts.Length}</b></color> parts: "+ partlist);
+```
 
 
 
