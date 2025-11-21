@@ -15,9 +15,9 @@ public class TextAssetLoader : MonoBehaviour
             string[] parts = line.Split(' ', '\t');
             foreach (string part in parts)
             { 
-                partlist += part + " <> ";
+                partlist += "<b><color=white>"+part+"</color></b>" + " <> ";
             }
-            Debug.Log($"Line has {parts.Length} parts: "+ partlist);
+            Debug.Log($"Line has <color=yellow><b>{parts.Length}</b></color> parts: "+ partlist);
         }
     }
 }
