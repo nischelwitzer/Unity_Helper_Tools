@@ -1,0 +1,3 @@
+Zeile1 Z1Wort1 Z1Wort2
+Zeile2 Z2Wort1 Z2Wort2 Z3Wort3   
+Zeile3 Z3Wort1 Z3Wort2
